@@ -1,0 +1,53 @@
+Instructions for the project :
+
+1. first row comprise the names of the columns
+
+Till now we have------------- MolLogP , MolWt, NumRotatableBonds,AromaticProportion, logS
+
+
+2. So we will predict y as using it as fucntion of x , here are x are the first 4 variables and the last var i.e logS is our y var , meaning the output variable , which we are going to predict 
+
+
+3. MolLogP, which is a calculated descriptor related to solubility, does correlate well. You can also see that some of these features have low variance, meaning the value of the feature changes little or not at all for many data points (e.g., “NumHDonors”).
+
+
+4.In chemistry, logS refers to the base-10 logarithm of the solubility of a substance, expressed in moles per liter (mol/L).
+
+
+5. we will read the csv data , then we will get the y falue which is basically the function of x , we will display only y column , then we will only visualise only the x cariable column , usign .drop method 
+
+
+6. Then we will do data spliting using sklearn.model 
+
+
+7.we will train 80 percent of data means out of 1144 rows only we will train the model on 915 rows and on remaining 20 percent of data , we will test , i.e 229 rows , for training and testign we are trainign only our x variables means 4 colums in each training and testing 
+
+...You can refer the commenst i have written in the code for datasplitting, to know what exactly we are doign , also refer to the visuals_for_ml folder for in depth understanding
+
+
+8. Next on we will build a model using Linear Regression algo (Linear regression is a supervised machine learning algorithm used to model the relationship between a dependent variable (output) and one or more independent variables (features) by finding a linear equation that best fits the data. This "best fit" line minimizes the distance between the predicted values and the actual data points. Essentially, it helps predict a continuous numerical value based on given input features. 
+)
+
+9. we diaplay the predicted data trained on 80 percent trained data , and also we display the data predicted on 20 percent testing data...
+
+10.Now we will compare the predicted values to the original values in the .csv data file 
+
+
+11.y_train # y_train was the actual values for the variable y as a fucntion of x i.e logS Values of that 80 percent of data to be trained earlier 
+
+
+12.y_LR_train_predict # it is the predicted values of y on the 80 percent of data trained earlier 
+
+13.Final Evaluation : 
+mean_squared_error (MSE):
+
+ # Purpose: This function calculates the Mean Squared Error, which is a common metric to quantify the average squared difference between the actual (true) values and the predicted values from a regression model.
+
+ #r2_score (R-squared or Coefficient of Determination):
+ 
+#Purpose: This function calculates the R-squared score, which measures the proportion of the variance in the dependent variable that is predictable from the independent variable(s). In simpler terms, it indicates how well the regression model explains the variability in the target variable
+
+
+14 .We use pandas DataFrame and .transpose function to make data look tidy , Basically the results after applying Linear Regression
+
+15. for more tidyness we seperate into our new given column names , instead of 1,2,3,4,5... usign .columns function 
