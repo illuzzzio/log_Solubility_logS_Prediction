@@ -51,3 +51,18 @@ mean_squared_error (MSE):
 14 .We use pandas DataFrame and .transpose function to make data look tidy , Basically the results after applying Linear Regression
 
 15. for more tidyness we seperate into our new given column names , instead of 1,2,3,4,5... usign .columns function 
+
+
+16. Upto this step we have predicted the outcomes using linear Regression algo, Now we will predict usign Random Forest Algo 
+
+
+17 . we do the same steps to predict , please refer the code 
+
+
+18, At last we will have two tables of prediction , One is predictions done on Linear Regression-Model and the Other one is Predictiosn Done usign Random-Forest Model , Finally we will compare and choose the best one
+
+
+19. Finally now we will do data visualization using matplotlib for getting the most efficient algo for the model 
+
+
+20. Finally using matplotlib and numpy we plot graphs for both models and can say that Random-Forest algo works more efficiently 
